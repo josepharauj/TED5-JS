@@ -1,0 +1,21 @@
+function retornoInvestimento() {
+
+ let capitalInicial = parseFloat(prompt("Digite o capital inicial:"));
+ let tempoMeses = parseFloat(prompt("Digite o tempo em meses:"));
+ let taxaJurosMensal = parseFloat(prompt("Digite a taxa de juros mensal:"));
+
+ let i = taxaJurosMensal / 100;
+
+  let montante = capitalInicial * Math.pow(1 + i, tempoMeses);
+
+
+  alert("Montante final: R$ " + montante.toFixed(2));
+}
+
+
+
+retornoInvestimento();
+
+
+
+
