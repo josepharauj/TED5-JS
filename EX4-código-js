@@ -1,0 +1,28 @@
+código 1:
+
+let salario = 1000;        
+let percentual = 0.0015;   
+let anoInicial = 1995;
+let anoAtual = new Date().getFullYear(); 
+
+for (let ano = 1996; ano <= anoAtual; ano++) {
+    salario += salario * percentual; 
+    percentual *= 2;                
+}
+
+alert("Salário atual em " + anoAtual + ": R$ " + salario.toFixed(2));
+
+código 2:
+
+let salario = parseFloat(prompt("Digite o salário inicial do funcionário:"));
+let percentual = 0.0015;
+let anoInicial = 1995;
+let anoAtual = new Date().getFullYear(); 
+
+for (let ano = 1996; ano <= anoAtual; ano++) {
+    salario += salario * percentual;
+    percentual *= 2;
+}
+
+alert("Salário atual em " + anoAtual + ": R$ " + salario.toFixed(2));
+
