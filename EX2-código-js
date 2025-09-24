@@ -1,0 +1,19 @@
+let numeros = []
+
+for (let i = 0; i < 10; i++ ) {
+     let numero = parseInt(prompt("Digite um número inteiro 10 vezes:"));
+     numeros.push(numero);
+}
+
+alert("Números digitados:" + numeros.join(","));
+
+let soma = numeros.reduce((acumulador, valor) => acumulador + valor, 0 );
+
+let pares = numeros.filter(num => num % 2 === 0);
+let impares =  numeros.filter(num => num % 2 !== 0);
+
+alert(
+    "Pares:" + pares.join(",") +
+    "\nImpares:" + impares.join(",")
+)
+
