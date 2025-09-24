@@ -1,0 +1,15 @@
+let habitantesA = 80000;
+let habitantesB = 200000;
+let taxaCrescimentoA = 0.03; 
+let taxaCrescimentoB = 0.015;
+let anos = 0;
+
+while (habitantesA < habitantesB) {
+  habitantesA += habitantesA * taxaCrescimentoA; 
+  habitantesB += habitantesB * taxaCrescimentoB;
+  anos++;
+}
+
+alert("Número de anos necessários: " + anos +
+      "\nPopulação de A: " + Math.floor(habitantesA) +
+      "\nPopulação de B: " + Math.floor(habitantesB));
