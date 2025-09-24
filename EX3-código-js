@@ -1,0 +1,25 @@
+let numeros = []
+
+for (let i = 0; i < 5; i++ ) {
+     let numero = parseInt(prompt("Digite um número 5 vezes:"));
+     numeros.push(numero);
+}
+
+alert("Números digitados: " + numeros.join(", "));
+
+let maior = Math.max(...numeros); 
+let menor = Math.min(...numeros); 
+let soma = numeros.reduce((acumulador, valor) => acumulador + valor, 0 );
+
+alert(
+    
+    "Maior valor: " + maior +
+    "\nMenor valor: " + menor  +
+    "\nSoma dos valores: " + soma 
+
+
+)
+
+
+
+
